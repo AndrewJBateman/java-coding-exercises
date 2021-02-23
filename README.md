@@ -20,28 +20,19 @@
 
 ## :books: General info
 
-* All exercises and challenges from Java Programming course - 
+* All exercises and challenges from Java Programming course
 
 ## :camera: Screenshots
 
-![Example screenshot](./img/pwa.jpg)
+![Example screenshot](./img/java.jpg)
 
 ## :signal_strength: Technologies
 
-* [Angular v11](https://angular.io/)
-* [Angular PWA](https://angular.io/guide/service-worker-getting-started) to add Angular service worked to app
-* [Iconfinder](https://www.iconfinder.com/) for free svg ivons
-* [Free Vector Graphics Software](https://vectr.com/)
-* [cthedot.de](https://cthedot.de/icongen/) icon generation - Web and App icons and PNG favicons
-* [Custom Splash Screen on iOS](https://appsco.pe/developer/splash-screens)
-* [http-server](https://www.npmjs.com/package/http-server) command-line http server
+* [Java v11](https://www.java.com/en/)
 
 ## :floppy_disk: Setup
 
-* Install dependencies using `npm i`
-* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-* Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-* Run `ng update` to update Angular
+* Open each folder in an IDE such as IntelliJ.
 
 ## :computer: Code Examples
 
