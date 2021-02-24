@@ -20,7 +20,7 @@
 
 ## :books: General info
 
-* All exercises and challenges from Java Programming course
+* [listIterator](https://www.geeksforgeeks.org/arraylist-listiterator-method-in-java-with-examples/) used to iterate to next and previous tracks
 
 ## :camera: Screenshots
 
