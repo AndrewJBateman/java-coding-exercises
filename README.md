@@ -21,6 +21,7 @@
 ## :books: General info
 
 * [listIterator](https://www.geeksforgeeks.org/arraylist-listiterator-method-in-java-with-examples/) used to iterate to next and previous tracks
+* [Overriding](https://www.geeksforgeeks.org/overriding-in-java/) used in child classes to implement a parent-class method
 
 ## :camera: Screenshots
 
@@ -38,13 +39,22 @@
 
 * tba
 
-```typescript
-
+```java
+// stores the values in the list
+@Override
+public void read(List<String> savedValues) {
+  if(savedValues != null && savedValues.size() > 0) {
+    this.name = savedValues.get(0);
+    this.hitPoints = Integer.parseInt(savedValues.get(1));
+    this.strength = Integer.parseInt(savedValues.get(2));
+    this.weapon = savedValues.get(3);
+  }
+}
 ```
 
 ## :cool: Features
 
-* tba
+* IntelliJ
 
 ## :clipboard: Status & To-Do List
 
