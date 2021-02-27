@@ -22,7 +22,9 @@
 
 * [listIterator](https://www.geeksforgeeks.org/arraylist-listiterator-method-in-java-with-examples/) used to iterate to next and previous tracks
 * [Overriding](https://www.geeksforgeeks.org/overriding-in-java/) used in child classes to implement a parent-class method
-* [Java inner class](https://www.w3schools.com/java/java_inner_classes.asp) used
+* [Java inner class](https://www.w3schools.com/java/java_inner_classes.asp)
+* [Java abstract class](https://www.w3schools.com/java/java_abstract.asp) a restricted class that cannot be used to create objects
+
 
 ## :camera: Screenshots
 
