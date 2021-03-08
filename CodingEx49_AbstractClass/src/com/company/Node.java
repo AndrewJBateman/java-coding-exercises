@@ -1,6 +1,6 @@
 package com.company;
 
-public class Node extends ListItem {
+public class Node extends ListItem{
 
     public Node(Object value) {
         super(value);
@@ -8,13 +8,12 @@ public class Node extends ListItem {
 
     @Override
     ListItem next() {
-        return this.rightLink;
+        return rightLink;
     }
 
     @Override
-    ListItem setNext(ListItem item) {
-        this.rightLink = item;
-        return this.rightLink;
+    void setNext(ListItem item) {
+        rightLink = item;
     }
 
     @Override
@@ -23,17 +22,15 @@ public class Node extends ListItem {
     }
 
     @Override
-    ListItem setPrevious(ListItem item) {
-        this.leftLink = item;
-        return this.leftLink;
+    void setPrevious(ListItem item) {
+        leftLink = item;
     }
 
     @Override
     int compareTo(ListItem item) {
         if(item != null) {
-            return ((String) super.getValue()).compareTo((String) item.getValue());
-        } else {
-            return -1;
-        }
+            return (this.value.toString().compareTo(item.getValue().toString()));
+        } else return -1;
+
     }
 }

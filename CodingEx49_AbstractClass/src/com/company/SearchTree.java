@@ -1,7 +1,7 @@
 package com.company;
 
-public class SearchTree implements NodeList {
-    private ListItem root = null;
+public class SearchTree implements NodeList{
+    private ListItem root;
 
     public SearchTree(ListItem root) {
         this.root = root;
@@ -9,37 +9,36 @@ public class SearchTree implements NodeList {
 
     @Override
     public ListItem getRoot() {
-        return this.root;
+        return root;
     }
 
     @Override
-    public boolean addItem(ListItem newItem) {
-        if(this.root == null) {
-            this.root = newItem;
+    public boolean addItem(ListItem item) {
+        if (root == null) {
+            root = item;
             return true;
         }
-        ListItem currentItem = this.root;
-        while(currentItem != null) {
-            int comparison = (currentItem.compareTo(newItem));
-            if(comparison <0) {
-                if(currentItem.next()!= null) {
-                    currentItem = currentItem.next();
-                } else {
-                    currentItem.setNext(newItem).setPrevious(currentItem);
+        ListItem currentItem = root;
+        while (true) {
+            if(currentItem.compareTo(item) > 0) {
+                if(currentItem.previous() == null) {
+                    currentItem.setPrevious(item);
                     return true;
-                }
-            } else if(comparison > 0) {
-                if(currentItem.previous()!=null) {
-                    currentItem.previous().setNext(newItem).setPrevious(currentItem.previous());
-                    newItem.setNext(currentItem).setPrevious(newItem);
                 } else {
-                    currentItem.setPrevious(newItem);
-                    return true;
+                    currentItem = currentItem.previous();
+                    continue;
                 }
-            } else {
-                System.out.println(newItem.getValue() + " is already present");
-                return false;
             }
+            if(currentItem.compareTo(item) < 0) {
+                if(currentItem.next() == null) {
+                    currentItem.setNext(item);
+                    return true;
+                } else {
+                    currentItem = currentItem.next();
+                    continue;
+                }
+            }
+            break;
         }
         return false;
     }
@@ -68,6 +67,7 @@ public class SearchTree implements NodeList {
         return false;
     }
 
+
     private void performRemoval(ListItem item, ListItem parent) {
         if (item.next() == null) {
             if (parent.next() == item) {
@@ -79,7 +79,7 @@ public class SearchTree implements NodeList {
             }
         } else if (item.previous() == null) {
             if (parent.next() == item) {
-                parent.setNext(item.next());
+                 parent.setNext(item.next());
             } else if (parent.previous() == item) {
                 parent.setPrevious(item.next());
             } else {
@@ -112,5 +112,6 @@ public class SearchTree implements NodeList {
                 traverse(root.next());
             }
         }
+
     }
 }
