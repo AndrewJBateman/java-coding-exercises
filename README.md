@@ -33,6 +33,10 @@
 * [The Map.computeIfAbsent() method](https://www.baeldung.com/java-map-computeifabsent) introduced in Java 8, it checks if the key is present in the map. If the key is present and a non-null value is related to the key, then it returns that value.
 * [getOrDefault(key, defaultValue) method](https://www.geeksforgeeks.org/properties-getordefaultkey-defaultvalue-method-in-java-with-examples/) returns the value fetched corresponding to this key, if present. If there is no such mapping, then it returns the defaultValue.
 
+**JavaFX**
+* [JavaFX FXML](https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm) an XML-based language that provides the structure for building a user interface separate from the application logic.
+* [VBox](http://tutorials.jenkov.com/javafx/vbox.html)
+
 ## :camera: Screenshots
 
 ![Example screenshot](./img/java.jpg)
@@ -40,6 +44,7 @@
 ## :signal_strength: Technologies
 
 * [Java v11](https://www.java.com/en/)
+* [Java look and feel Graphics Repository](https://www.oracle.com/java/technologies/java-look-and-feel-graphics-repository.html)
 
 ## :floppy_disk: Setup
 
