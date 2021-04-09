@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaFX_CreateControls.iml" filepath="$PROJECT_DIR$/JavaFX_CreateControls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX_Events.iml" filepath="$PROJECT_DIR$/JavaFX_Events.iml" />
     </modules>
   </component>
 </project>
