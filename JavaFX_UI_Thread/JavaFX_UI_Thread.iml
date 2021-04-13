@@ -23,6 +23,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="javaFX-11" level="application" />
+    <orderEntry type="library" name="javafx-swt" level="application" />
   </component>
 </module>

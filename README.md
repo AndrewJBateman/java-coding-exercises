@@ -33,6 +33,7 @@
 * [The Map.computeIfAbsent() method](https://www.baeldung.com/java-map-computeifabsent) introduced in Java 8, it checks if the key is present in the map. If the key is present and a non-null value is related to the key, then it returns that value.
 * [getOrDefault(key, defaultValue) method](https://www.geeksforgeeks.org/properties-getordefaultkey-defaultvalue-method-in-java-with-examples/) returns the value fetched corresponding to this key, if present. If there is no such mapping, then it returns the defaultValue.
 * [Java checkbox](https://openjfx.io/javadoc/13/javafx.controls/javafx/scene/control/CheckBox.html)
+* [Java Interface Runnable](https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html)
 
 **JavaFX**
 * [JavaFX FXML](https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm) an XML-based language that provides the structure for building a user interface separate from the application logic.
