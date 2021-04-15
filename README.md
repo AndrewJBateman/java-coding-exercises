@@ -34,6 +34,7 @@
 * [getOrDefault(key, defaultValue) method](https://www.geeksforgeeks.org/properties-getordefaultkey-defaultvalue-method-in-java-with-examples/) returns the value fetched corresponding to this key, if present. If there is no such mapping, then it returns the defaultValue.
 * [Java checkbox](https://openjfx.io/javadoc/13/javafx.controls/javafx/scene/control/CheckBox.html)
 * [Java Interface Runnable](https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html)
+* [Java Class DateTimeFormatter](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html) used for printing and parsing date-time objects
 
 **JavaFX**
 * [JavaFX FXML](https://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm) an XML-based language that provides the structure for building a user interface separate from the application logic.
@@ -86,4 +87,4 @@ public void read(List<String> savedValues) {
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://www.andrewbateman.org), email: gomezbateman@yahoo.com
