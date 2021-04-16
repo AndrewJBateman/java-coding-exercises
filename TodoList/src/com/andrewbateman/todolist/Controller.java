@@ -1,5 +1,6 @@
 package com.andrewbateman.todolist;
 
+import com.andrewbateman.todolist.dataModel.TodoData;
 import com.andrewbateman.todolist.dataModel.TodoItem;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -29,23 +30,25 @@ public class Controller {
     private Label deadlineLabel;
 
     public void initialize() {
-        TodoItem item1 = new TodoItem("Finish washing up", "wash plates, cups and forks",
-                LocalDate.of(2021, Month.APRIL, 19));
-        TodoItem item2 = new TodoItem("Mow lawn", "Mow front and back",
-                LocalDate.of(2021, Month.APRIL, 18));
-        TodoItem item3 = new TodoItem("Finish javascript project", "Add testing folder",
-                LocalDate.of(2021, Month.APRIL, 17));
-        TodoItem item4 = new TodoItem("Clean car", "Do boot and bonnet first",
-                LocalDate.of(2021, Month.APRIL, 23));
-        TodoItem item5 = new TodoItem("Pick up delivery", "At the post office after 11am",
-                LocalDate.of(2021, Month.APRIL, 20));
-
-        todoItems = new ArrayList<TodoItem>();
-        todoItems.add(item1);
-        todoItems.add(item2);
-        todoItems.add(item3);
-        todoItems.add(item4);
-        todoItems.add(item5);
+//        TodoItem item1 = new TodoItem("Finish washing up", "wash plates, cups and forks",
+//                LocalDate.of(2021, Month.APRIL, 19));
+//        TodoItem item2 = new TodoItem("Mow lawn", "Mow front and back",
+//                LocalDate.of(2021, Month.APRIL, 18));
+//        TodoItem item3 = new TodoItem("Finish javascript project", "Add testing folder",
+//                LocalDate.of(2021, Month.APRIL, 17));
+//        TodoItem item4 = new TodoItem("Clean car", "Do boot and bonnet first",
+//                LocalDate.of(2021, Month.APRIL, 23));
+//        TodoItem item5 = new TodoItem("Pick up delivery", "At the post office after 11am",
+//                LocalDate.of(2021, Month.APRIL, 20));
+//
+//        todoItems = new ArrayList<TodoItem>();
+//        todoItems.add(item1);
+//        todoItems.add(item2);
+//        todoItems.add(item3);
+//        todoItems.add(item4);
+//        todoItems.add(item5);
+//
+//        TodoData.getInstance().storeTodoItems(todoItems);
 
         todoListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<TodoItem>() {
             @Override
@@ -59,7 +62,7 @@ public class Controller {
             }
         });
 
-        todoListView.getItems().setAll(todoItems);
+        todoListView.getItems().setAll(TodoData.getInstance().getTodoItems());
         todoListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         todoListView.getSelectionModel().selectFirst();
     }
